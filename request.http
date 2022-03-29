@@ -1,0 +1,44 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "nguyenbinh",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "nguyenbinh",
+    "password": "123456"
+}
+
+
+###
+
+GET http://localhost:5000/api/room
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQyZmMyYjIzMzgzZTZkOWMzYzhkOTQiLCJpYXQiOjE2NDg1NTcxMTJ9.S3I5lq1vw5vxaPSSuhettvLckgh5D-7tDB2zjdFqj40
+
+###
+
+
+
+PUT http://localhost:5000/api/room/6242fc5523383e6d9c3c8d98
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQyZmMyYjIzMzgzZTZkOWMzYzhkOTQiLCJpYXQiOjE2NDg1NTcxMTJ9.S3I5lq1vw5vxaPSSuhettvLckgh5D-7tDB2zjdFqj40
+
+{
+    "deviceName": "Đèn sưởi",
+    "type": "đèn",
+    "status": "Off"
+}
+
+###
+
+PUT http://localhost:5000/api/room
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQyZmMyYjIzMzgzZTZkOWMzYzhkOTQiLCJpYXQiOjE2NDg1NTcxMTJ9.S3I5lq1vw5vxaPSSuhettvLckgh5D-7tDB2zjdFqj40
